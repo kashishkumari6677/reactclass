@@ -1,3 +1,53 @@
 nav ul a:hover{
   color: #000;
 }
+.mainCard{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.Card{
+  width: 30%;
+  flex-grow: 1;
+}
+.Card img{
+  width: 100%;
+  aspect-ratio: 12/11;
+}
+.Card h1{
+  font-size: 25px;
+}
+.loadBar{
+  display: grid;
+  place-items: center;
+  height: 70vh;
+}
+.bars {
+  width: 50.4px;
+  height: 50.4px;
+  --c: linear-gradient(#474bff 0 0);
+  background: var(--c) 0    0, 
+         var(--c) 50%  50%, 
+         var(--c) 100% 100%;
+  background-repeat: no-repeat;
+  animation: bars-ed8ugkmd 1s infinite alternate;
+}
+
+@keyframes bars-ed8ugkmd {
+  0%, 10% {
+     background-size: 10.1px  100%;
+  }
+
+  50% {
+     background-size: 10.1px  10.1px;
+  }
+
+  90%, 100% {
+     background-size: 100% 10.1px;
+  }
+}
+.cen{
+  text-align:center
+}
